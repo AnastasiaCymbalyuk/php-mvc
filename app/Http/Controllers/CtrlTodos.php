@@ -43,7 +43,6 @@ class CtrlTodos extends Controller
             'title' => 'string',
             'description' => 'string',
         ]);
-        // dd($data);
         todos::create($data);
         return redirect('/todo');
     }
